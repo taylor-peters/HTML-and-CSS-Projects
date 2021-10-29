@@ -1,9 +1,0 @@
-<!DOCTYPE>
-<html lang="en">
-
-<title> My First HTML Doc </title>
-<p> "Hello, world" </p>
-
-
-</html>
-

@@ -1,3 +1,20 @@
+h1 {
+	color: hotpink;
+	text-shadow: 2px 2px #000000;
+}
+
+ol {
+	background: black;
+	color: white;
+	list-style-type: default;
+}
+
+ul {
+	background: gold;
+	color: maroon;
+	list-style-type: circle;
+}
+
 p {
 	color: maroon;
 	background-color: gold;

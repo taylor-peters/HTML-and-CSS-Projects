@@ -1,0 +1,11 @@
+ol {
+	list-style-type: lower-alpha;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style-type: circle;
+	color: red;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,71 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+Define the 100% flex and set the max-width 100% for the column class.
+
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
+Align the column image to the vertical middle using CSS vertical-align property.
+
+.column img {
+  vertical-align: middle;
+}
+The "container" class contains the image, caption text, and dim background overlay on the image. So, we need to make this element relative positioned with 100% width.
+
+.container {
+  position: relative;
+  width: 100%;
+}
+As we have defined the "image" class in HTML for each photo, we can set styles for each image. Here we just need to make the image responsive to fit in the container. To do so, display the image as a block element and set 100% width along with the auto height.
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+The "overlay" class contains the caption text that we need to set over the image. Keep its absolute position and set 0 values for the top, bottom left, and right to fit this div to the center of the image container. Likewise, define the background color, and opacity as 0 to hide it in normal condition.
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+Now, show the overlay by defining opacity 0.5 (half transparent) on the container hover.
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+Specify the CSS styles for the caption text. Keep its absolute position and 50% value for the “top” and “left” property to place the text center of the image.
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+Finally, make the image grid responsive using CSS media queries. Use the 50% value for the flex property on the 480px screen (mobile devices). Similarly,  define the 33.3% flex value for the large screens.
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+    .column {
+      flex: 33.3%;
+      max-width: 33.3%;
+    }
+}
+

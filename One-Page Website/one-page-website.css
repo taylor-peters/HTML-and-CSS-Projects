@@ -1,17 +1,16 @@
-
 /* Add a black background color to the top navigation */
+
 .topnav {
   background-color: #708090;
   overflow: hidden;
 }
 
 body {
-	margin: 0px;
-	background-color: #708090;
+  margin: 0px;
+  background-color: #708090;
 }
 
 h1 {
-	
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -22,7 +21,6 @@ h1 {
   font-family: Tahoma, sans-serif;
   letter-spacing: 1px;
   text-shadow: 2px 2px #708090;
-	
 }
 
 h2 {
@@ -36,6 +34,7 @@ h2 {
 }
 
 /* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -50,11 +49,13 @@ h2 {
 }
 
 /* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #ddd;
 }
 
 /* Add a color to the active/current link */
+
 .topnav a.active {
   background-color: #ffffff;
   color: #708090;
@@ -72,31 +73,33 @@ h2 {
   font-size: x-large;
   text-shadow: 2px 2px #708090;
   display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
-  overflow:hidden;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+  overflow: hidden;
   padding: 16px;
   background-position: center;
 }
 
 #gallery {
-	display: flex;
-    justify-content: center;
-    padding-top: 40px;
-	padding-bottom: 40px;
-	height: 75%;
-	width: 100%;
-	background-color: honeydew;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 75%;
+  width: 100%;
+  background-color: honeydew;
 }
 
 #video {
-	display: flex;
-    justify-content: center;
-    padding-top: 40px;
-	padding-bottom: 40px;
-	height: 75%;
-	width: 100%;
-	background-color: honeydew;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 75%;
+  width: 100%;
+  background-color: honeydew;
 }
 
 .overlay {
@@ -140,56 +143,55 @@ h2 {
 }
 
 .image-grid {
-	--gap: 16px;
-	--num-cols: 3;
-	--row-height: 300px;
-	
-	box-sizing: border-box;
-	padding: var(--gap);
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(var(--num-cols), 1fr);
-	grid-auto-rows: var(--row-height);
-	gap: var(--gap);
+  --gap: 16px;
+  --num-cols: 3;
+  --row-height: 300px;
+  box-sizing: border-box;
+  padding: var(--gap);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
 }
 
-.image-grid > img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	border-radius: 30px;
+.image-grid>img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
-#form{
-	display: flex;
-    justify-content: center;
-    padding-top: 100px;
-	padding-bottom: 40px;
-	height: 75%;
-	width: 75%;
-	margin: auto;
-	background-color: honeydew;
-	font-weight: bold;
-    font-family: Tahoma, sans-serif;
-	letter-spacing: 1px;
-	color: #708090;
-	border-radius: 30px;
+#form {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  height: 75%;
+  width: 75%;
+  margin: auto;
+  background-color: honeydew;
+  font-weight: bold;
+  font-family: Tahoma, sans-serif;
+  letter-spacing: 1px;
+  color: #708090;
+  border-radius: 30px;
 }
 
 input[type=text], select {
-  width: 100%;
+  width: 75%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 18px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   box-sizing: border-box;
-  border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 input[type=submit] {
-  width: 100%;
+  width: 75%;
   background-color: #708090;
   color: white;
   padding: 20px 20px;
@@ -213,17 +215,17 @@ footer {
   font-weight: bold;
   font-family: Tahoma, sans-serif;
   letter-spacing: 1px;
-  line-height: 50%  
+  line-height: 50%
 }
 
-#number{
-	font-size: x-large;
+#number {
+  font-size: x-large;
 }
 
 #name {
-	font-size: large;
+  font-size: large;
 }
 
 #email {
-	font-size: medium;
+  font-size: medium;
 }

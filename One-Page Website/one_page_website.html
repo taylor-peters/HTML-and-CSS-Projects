@@ -1,128 +1,236 @@
 <!doctype html>
 <html lang="en">
-	<link rel="stylesheet" type="text/css" href="one-page-website.css">
-		<head>
-			<title> My Favorite National Parks </title>
-			<meta charset="UTF-8">
-	</head>
-			<body>
-				<!-- NAV -->
-				<div class="topnav">
-					<a class="active" href="#home">Home</a>
-					<a href="#gallery">Gallery</a>
-					<a href="#video">Video</a>
-					<a href="#form">Contact</a>
+<link rel="stylesheet" type="text/css" href="one-page-website.css">
+<script src="one-page-website.js"></script>
+
+
+<head>
+
+	<title> My Favorite National Parks </title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<!-- NAV -->
+	<div class="topnav">
+		<a class="active" href="#home">Home</a>
+		<a href="#gallery">Gallery</a>
+		<a href="#video">Video</a>
+		<a href="#form">Contact</a>
+	</div>
+
+	<!--HOME-->
+	<div id="home" max-width: 100%>
+		<div>
+			<h1>My Favorite National Parks</h1>
+		</div>
+	</div>
+	<!--END HOME-->
+
+	<h2>Popular National Parks</h2>
+
+	<!--GALLERY-->
+	<section>
+		<div id="gallery">
+			<div class="image-grid">
+				<div class="container" onclick="openModal();currentSlide(1)">
+					<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Crater Lake</div>
+					</div>
 				</div>
-				<!--HOME-->
-				<div id="home" max-width: 100%>
-				<div>
-					<h1>My Favorite National Parks</h1>
+				<div class="container" onclick="openModal();currentSlide(2)">
+					<img src="./images/thumb/thumbnail_2.png" alt="Denali" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Denali</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(3)">
+					<img src="./images/thumb/thumbnail_3.png" alt="Glacier Bay" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Glacier Bay</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(4)">
+					<img src="./images/thumb/thumbnail_4.png" alt="Death Valley" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Death Valley</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(5)">
+					<img src="./images/thumb/thumbnail_5.png" alt="Mesa Verde" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Mesa Verde</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(6)">
+					<img src="./images/thumb/thumbnail_6.png" alt="Olympic" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Olympic</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(7)">
+					<img src="./images/thumb/thumbnail_7.png" alt="Redwoods" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Redwoods</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(8)">
+					<img src="./images/thumb/thumbnail_8.png" alt="Crater Lake" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Zion</div>
+					</div>
+				</div>
+				<div class="container" onclick="openModal();currentSlide(9)">
+					<img src="./images/thumb/thumbnail_9.png" alt="Crater Lake" width="400" height="300">
+					<div class="overlay">
+						<div class="text">Yellowstone</div>
+					</div>
 				</div>
 			</div>
-			<!--END HOME-->
-			<h2>Popular National Parks</h2>
-			<!--GALLERY-->
-			<section>
-				<div id="gallery">
-					<div class="image-grid">
-						<div class="container">
-							<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width="400" height="300">
-								<div class="overlay">
-									<div class="text">Crater Lake</div>
-								</div>
-							</div>
-							<div class="container">
-								<img src="./images/thumb/thumbnail_2.png" alt="Denali" width="400" height="300">
-									<div class="overlay">
-										<div class="text">Denali</div>
-									</div>
-								</div>
-								<div class="container">
-									<img src="./images/thumb/thumbnail_3.png" alt="Glacier Bay" width="400" height="300">
-										<div class="overlay">
-											<div class="text">Glacier Bay</div>
-										</div>
-									</div>
-									<div class="container">
-										<img src="./images/thumb/thumbnail_4.png" alt="Death Valley" width="400" height="300">
-											<div class="overlay">
-												<div class="text">Death Valley</div>
-											</div>
-										</div>
-										<div class="container">
-											<img src="./images/thumb/thumbnail_5.png" alt="Mesa Verde" width="400" height="300">
-												<div class="overlay">
-													<div class="text">Mesa Verde</div>
-												</div>
-											</div>
-											<div class="container">
-												<img src="./images/thumb/thumbnail_6.png" alt="Olympic" width="400" height="300">
-													<div class="overlay">
-														<div class="text">Olympic</div>
-													</div>
-												</div>
-												<div class="container">
-													<img src="./images/thumb/thumbnail_7.png" alt="Redwoods" width="400" height="300">
-														<div class="overlay">
-															<div class="text">Redwoods</div>
-														</div>
-													</div>
-													<div class="container">
-														<img src="./images/thumb/thumbnail_8.png" alt="Crater Lake" width="400" height="300">
-															<div class="overlay">
-																<div class="text">Zion</div>
-															</div>
-														</div>
-														<div class="container">
-															<img src="./images/thumb/thumbnail_9.png" alt="Crater Lake" width="400" height="300">
-																<div class="overlay">
-																	<div class="text">Yellowstone</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</section>
-																							
-		<!--VIDEO-->
-		<h2>Video: 25 Most Popular National Parks</h2>
-		<div id="video">
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/zTBmv-Gzf2w" 
-			title="YouTube video player" 
-			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</div>
+	</section>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="./images/thumb/thumbnail_1.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="./images/thumb/thumbnail_2.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="./images/thumb/thumbnail_3.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="./images/thumb/thumbnail_4.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="./images/thumb/thumbnail_5.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="./images/thumb/thumbnail_6.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="./images/thumb/thumbnail_7.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="./images/thumb/thumbnail_8.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="./images/thumb/thumbnail_9.png" style="width: 100%; height: 500px; object-fit: cover;">
+			</div>
+
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="Crater Lake">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Denali">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Glacier Bay">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_4.png" onclick="currentSlide(4)" alt="Death Valley">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_5.png" onclick="currentSlide(5)" alt="Mesa Verde">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_6.png" onclick="currentSlide(6)" alt="Olympic">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_7.png" onclick="currentSlide(7)" alt="Redwoods">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_8.png" onclick="currentSlide(8)" alt="Zion">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/thumb/thumbnail_9.png" onclick="currentSlide(9)" alt="Yellowstone">
+			</div>
+		</div>
+	</div>
+
+	<!--VIDEO-->
+	<h2>Video: 25 Most Popular National Parks</h2>
+	<div id="video">
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/zTBmv-Gzf2w" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen>
 		</iframe>
 	</div>
-	
+
 	<!--FORM-->
-		<h2>Stay Connected with Nature</h2>
-		<div id="form">
+	<h2>Stay Connected with Nature</h2>
+	<div id="form">
 		<form>
 			<label for="fname">First Name</label><br>
 			<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-				<label for="lname">Last Name</label><br>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-					<label for="favpark">Favorite Park?</label>
-					<select id="favpark" name="favpark">
-						<option value="Crater Lake">Crater Lake</option>
-						<option value="Denali">Denali</option>
-						<option value="Death Valley">Death Valley</option>
-						<option value="Glacier Bay">Glacier Bay</option>
-						<option value="Mesa Verde">Mesa Verde</option>
-						<option value="Olympic">Olympic</option>
-						<option value="Zion">Zion</option>
-						<option value="Redwoods">Redwoods</option>
-						<option value="Yellowstone">Yellowstone</option>
-					</select>
-					<input type="submit" value="Submit">
-				</form>
-				</div>
-				
+			<label for="lname">Last Name</label><br>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+			<label for="favpark">Favorite Park?</label>
+			<select id="favpark" name="favpark">
+				<option value="Crater Lake">Crater Lake</option>
+				<option value="Denali">Denali</option>
+				<option value="Death Valley">Death Valley</option>
+				<option value="Glacier Bay">Glacier Bay</option>
+				<option value="Mesa Verde">Mesa Verde</option>
+				<option value="Olympic">Olympic</option>
+				<option value="Zion">Zion</option>
+				<option value="Redwoods">Redwoods</option>
+				<option value="Yellowstone">Yellowstone</option>
+			</select>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
 	<!--FOOTER-->
-		<footer>
-		  <p id="number">(469) 919-9428</p>
-		  <p id="name">Taylor Peters</p>
-		  <br>
-		  <p id="email">taylordanielpeters@gamil.com</p>
-		</footer>
-				
-	</body>
+	<footer>
+		<p id="number">(469) 919-9428</p>
+		<p id="name">Taylor Peters</p>
+		<br>
+		<p id="email">taylordanielpeters@gamil.com</p>
+	</footer>
+
+</body>
+
 </html>

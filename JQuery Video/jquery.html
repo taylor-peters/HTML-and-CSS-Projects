@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +64,72 @@
 <p id="holder"></p>
 <button> Hide All </button>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JQuery</title>
+</head>
+
+<script>
+    $(document).ready(function () {
+
+        $("html").append(   //Adds html elements to document
+            "<h1 id='h1'>Basic JQuery</h1>\
+                <div class='container'>\
+                    <p class='paragraph' id='one'>Paragraph 1</p>\
+                    <p class='paragraph' id='two'>Paragraph 2</p>\
+                    <p class='paragraph' id='three'>Paragraph 3</p>\
+                </div>"
+        );
+
+        //changes color of p elements
+        $("#one").css({ "color": "red" });
+        $("#two").css({ "color": "green" });
+        $("#three").css({ "color": "blue" });
+
+        //changes pointer attribute
+        $("#one").css({ "cursor": "pointer" });
+        $("#two").css({ "cursor": "pointer" });
+        $("#three").css({ "cursor": "pointer" });
+        $("#h1").css({ "cursor": "pointer" });
+
+        //changes holder content, logs event to console
+        $("#one").click(function () {
+            $('#holder').html("you clicked paragraph 1")
+            console.log("a paragraph was clicked")
+        });
+
+        $("#two").click(function () {
+            $('#holder').html("you clicked paragraph 2")
+            console.log("a paragraph was clicked")
+        });
+
+        $("#three").click(function () {
+            $('#holder').html("you clicked paragraph 3")
+            console.log("a paragraph was clicked")
+        });
+
+        //runs event when button is pressed
+        $("button").click(function () {
+            console.log("button has been clicked")
+            $("#one").hide("slow")
+            $("#two").hide("fast")
+            $("#three").hide()
+        });
+    });
+
+</script>
+
+<p id="holder"></p>
+<button> Hide All </button>
+
+>>>>>>> d31b1c81af9017f5976a334276f18f211fe7f0ac
 =======
 <!DOCTYPE html>
 <html lang="en">

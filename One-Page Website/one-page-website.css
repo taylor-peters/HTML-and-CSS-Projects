@@ -98,6 +98,11 @@ h2 {
   background-color: honeydew;
 }
 
+.column {
+  float: left;
+  width: 25%;
+}
+
 .row>.column {
   padding: 0 8px;
 }
@@ -109,10 +114,7 @@ h2 {
 }
 
 /* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
+
 
 .modal {
   display: none;
